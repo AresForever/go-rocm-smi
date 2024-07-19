@@ -45,7 +45,7 @@ const (
 
 var rocm_smi_lib *dl.DynamicLibrary
 
-// Virtual device handle for the usage with the functions provided
+// DeviceHandle Virtual device handle for the usage with the functions provided
 // by the rocm_smi package to have similar handling as other packages
 // by first getting the handle for a device index and use this in all
 // subsequent calls.
@@ -105,7 +105,7 @@ func Init() RSMI_status {
 	return rsmi_init(0)
 }
 
-// Init initializes ROCm SMI. When called, this initializes internal data structures,
+// InitWithFlags Init initializes ROCm SMI. When called, this initializes internal data structures,
 // including those corresponding to sources of information that SMI provides. This version
 // uses the Flags argument as RSMI_init_flags:
 //
