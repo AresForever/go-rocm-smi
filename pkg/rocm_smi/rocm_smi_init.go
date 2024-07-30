@@ -39,7 +39,7 @@ import (
 import "C"
 
 const (
-	rocmSmiLibraryName      = "librocm_smi64.so.7"
+	rocmSmiLibraryName      = "librocm_smi64.so"
 	rocmSmiLibraryLoadFlags = dl.RTLD_LAZY | dl.RTLD_GLOBAL
 )
 
